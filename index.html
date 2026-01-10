@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3S Batik Gallery | Unique Wearable Art</title>
+    <style>
+        :root {
+            --dark-gold: #8e7341;
+            --soft-white: #fdfdfd;
+            --deep-charcoal: #222;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: var(--soft-white);
+            color: var(--deep-charcoal);
+        }
+
+        /* Portfolio Header */
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            background: #fff;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-style: italic;
+            color: var(--dark-gold);
+            letter-spacing: 2px;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Product Gallery Grid */
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .category-card {
+            background: white;
+            padding: 10px;
+            border: 1px solid #eee;
+        }
+
+        .img-placeholder {
+            width: 100%;
+            aspect-ratio: 3/4;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: italic;
+            color: #999;
+            border-bottom: 1px solid #eee;
+            object-fit: cover;
+        }
+
+        .category-info {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .category-info h3 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .category-info p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 100px 20px;
+            background: #111;
+            color: white;
+            margin-top: 50px;
+        }
+
+        .one-of-one-badge {
+            display: inline-block;
+            border: 1px solid var(--dark-gold);
+            padding: 5px 15px;
+            font-size: 0.7rem;
+            margin-top: 10px;
+            color: var(--dark-gold);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/YOUR_PHONE_NUMBER" class="whatsapp-float" target="_blank">
+        <span>Chat to Buy</span>
+    </a>
+
+    <header>
+        <h1>3S BATIK GALLERY</h1>
+        <p>â Every Pattern is a Masterpiece â</p>
+    </header>
+
+    <div class="gallery-container">
+        
+        <div class="category-card">
+            <img src="long-top.jpg" alt="Batik Long Top" class="img-placeholder">
+            <div class="category-info">
+                <h3>Batik Long Tops</h3>
+                <p>Graceful Silhouettes</p>
+                <span class="one-of-one-badge">Unique Design</span>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <img src="cord-set.jpg" alt="Batik Cord Set" class="img-placeholder">
+            <div class="category-info">
+                <h3>Batik Cord Sets</h3>
+                <p>Modern Art Sets</p>
+                <span class="one-of-one-badge">Hand-Dyed</span>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <img src="palazzo-set.jpg" alt="Batik Palazzo Set" class="img-placeholder">
+            <div class="category-info">
+                <h3>Palazzo Sets</h3>
+                <p>Elegance in Motion</p>
+                <span class="one-of-one-badge">1-of-1 Piece</span>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <img src="material.jpg" alt="Batik Dress Material" class="img-placeholder">
+            <div class="category-info">
+                <h3>Dress Material</h3>
+                <p>Unstitched Creativity</p>
+                <span class="one-of-one-badge">Authentic Batik</span>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <img src="half-pants.jpg" alt="Batik Half Pants" class="img-placeholder">
+            <div class="category-info">
+                <h3>Half Pants</h3>
+                <p>Casual Art</p>
+                <span class="one-of-one-badge">Limited Pattern</span>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <img src="short-top.jpg" alt="Batik Short Top" class="img-placeholder">
+            <div class="category-info">
+                <h3>Short Tops</h3>
+                <p>Daily Chic</p>
+                <span class="one-of-one-badge">Single Stock Only</span>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>3S BATIK GALLERY</p>
+        <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.6;">Â© 2026 All Rights Reserved. Every design is hand-drawn and unique.</p>
+    </footer>
+
+</body>
+</html>
